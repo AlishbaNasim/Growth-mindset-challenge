@@ -96,6 +96,8 @@ if uploaded_files:
                 df.to_excel(buffer, index=False)
                 file_name = file.name.replace(file_ext, ".xlsx")
                 mime_type = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+
+
                
             
             elif conversion_type == "JSON":
@@ -111,6 +113,7 @@ if uploaded_files:
                 data=buffer,
                 file_name=file_name,
                 mime=mime_type
+               
             )
 
 
